@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "name": "const",
+      "position": {
+        "x": -37,
+        "y": -30
+      },
+      "size": {
+        "x": 192,
+        "y": 48
+      },
+      "params": "3",
+      "inputs": [],
+      "outputs": [
+        {
+          "id": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "name": "negate",
+      "position": {
+        "x": 186,
+        "y": -77
+      },
+      "size": {
+        "x": 192,
+        "y": 48
+      },
+      "params": null,
+      "inputs": [
+        {
+          "id": 2,
+          "name": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "id": 3,
+          "name": "output"
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "position": {
+        "x": 649,
+        "y": -54
+      },
+      "size": {
+        "x": 192,
+        "y": 48
+      },
+      "params": null,
+      "inputs": [
+        {
+          "id": 4,
+          "name": "value"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "multiply",
+      "position": {
+        "x": 404,
+        "y": -53
+      },
+      "size": {
+        "x": 192,
+        "y": 72
+      },
+      "params": null,
+      "inputs": [
+        {
+          "id": 5,
+          "name": "A"
+        },
+        {
+          "id": 6,
+          "name": "B"
+        }
+      ],
+      "outputs": [
+        {
+          "id": 7,
+          "name": "output"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "upstream": 1,
+      "downstream": 2
+    },
+    {
+      "upstream": 7,
+      "downstream": 4
+    },
+    {
+      "upstream": 3,
+      "downstream": 5
+    },
+    {
+      "upstream": 1,
+      "downstream": 6
+    }
+  ]
+}

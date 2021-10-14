@@ -1,0 +1,195 @@
+{
+  "nodes": [
+    {
+      "name": "const",
+      "position": {
+        "x": -37,
+        "y": -30
+      },
+      "size": {
+        "x": 192,
+        "y": 48
+      },
+      "params": "17",
+      "inputs": [],
+      "outputs": [
+        {
+          "id": 1,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "name": "negate",
+      "position": {
+        "x": 186,
+        "y": -77
+      },
+      "size": {
+        "x": 192,
+        "y": 48
+      },
+      "params": null,
+      "inputs": [
+        {
+          "id": 2,
+          "name": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "id": 3,
+          "name": "output"
+        }
+      ]
+    },
+    {
+      "name": "result",
+      "position": {
+        "x": 740,
+        "y": 139
+      },
+      "size": {
+        "x": 192,
+        "y": 48
+      },
+      "params": null,
+      "inputs": [
+        {
+          "id": 4,
+          "name": "value"
+        }
+      ],
+      "outputs": []
+    },
+    {
+      "name": "multiply",
+      "position": {
+        "x": 404,
+        "y": -53
+      },
+      "size": {
+        "x": 192,
+        "y": 72
+      },
+      "params": null,
+      "inputs": [
+        {
+          "id": 5,
+          "name": "A"
+        },
+        {
+          "id": 6,
+          "name": "B"
+        }
+      ],
+      "outputs": [
+        {
+          "id": 7,
+          "name": "output"
+        }
+      ]
+    },
+    {
+      "name": "divide",
+      "position": {
+        "x": 631,
+        "y": -10
+      },
+      "size": {
+        "x": 192,
+        "y": 72
+      },
+      "params": null,
+      "inputs": [
+        {
+          "id": 8,
+          "name": "num"
+        },
+        {
+          "id": 9,
+          "name": "den"
+        }
+      ],
+      "outputs": [
+        {
+          "id": 10,
+          "name": "output"
+        }
+      ]
+    },
+    {
+      "name": "const",
+      "position": {
+        "x": 380,
+        "y": 51
+      },
+      "size": {
+        "x": 192,
+        "y": 48
+      },
+      "params": "92",
+      "inputs": [],
+      "outputs": [
+        {
+          "id": 11,
+          "name": "value"
+        }
+      ]
+    },
+    {
+      "name": "negate",
+      "position": {
+        "x": 672,
+        "y": 78
+      },
+      "size": {
+        "x": 192,
+        "y": 48
+      },
+      "params": null,
+      "inputs": [
+        {
+          "id": 12,
+          "name": "input"
+        }
+      ],
+      "outputs": [
+        {
+          "id": 13,
+          "name": "output"
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "upstream": 1,
+      "downstream": 2
+    },
+    {
+      "upstream": 3,
+      "downstream": 5
+    },
+    {
+      "upstream": 1,
+      "downstream": 6
+    },
+    {
+      "upstream": 11,
+      "downstream": 9
+    },
+    {
+      "upstream": 7,
+      "downstream": 8
+    },
+    {
+      "upstream": 10,
+      "downstream": 12
+    },
+    {
+      "upstream": 13,
+      "downstream": 4
+    }
+  ]
+}
